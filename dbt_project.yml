@@ -18,5 +18,5 @@ models:
   jaffle_shop:
       materialized: table
       staging:
-        materialized: view
+        materialized: table
         tags: ["staging", "hourly"]
