@@ -20,3 +20,9 @@ models:
       staging:
         materialized: view
         tags: ["staging", "hourly"]
+
+# ======
+# Run Hooks
+# ======
+on-run-start:
+    - "{{create_udfs()}}"
